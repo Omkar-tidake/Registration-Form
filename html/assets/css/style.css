@@ -1,0 +1,49 @@
+/* universal css */
+body {margin: 0px;background: #F3F5F9;font-family: 'Poppins', sans-serif;color: #152446;font-size: 14px;}
+input, textarea {border: 1px solid #ddd;border-radius: 7px;padding: 8px 15px;width: -webkit-fill-available;line-height: 1.5;color: #152446;}
+input:focus, textarea:focus {outline: 0px;}
+
+
+.main_wrapper {max-width: 700px;background: #fff;border-radius: 30px;padding: 30px 50px;margin: 50px auto;box-shadow: 0px 0px 30px 0px #efefef;}
+.section_title {margin: 0px 0px 30px;text-align: center;font-weight: 600;font-size: 34px;padding-bottom: 20px;position: relative;line-height: 1;}
+.section_title:before {content: '';position: absolute;height: 2px;width: 80px;background: #ef364f;bottom: 0px;left: 0;right: 0;margin: auto;}
+.form_field {display: flex;margin-bottom: 25px;justify-content: space-between;}
+.form_field:last-child {margin: 0px;}
+.form_field label {width: 140px;text-align: right;padding-top: 9px;}
+.form_field label .required {color: #ef364f;}
+.form__inner_field {width: calc(100% - 150px);}
+.form__inner_field.password_filed {position: relative;}
+.form__inner_field.password_filed input {padding-right: 40px;}
+.error_msg {margin: 5px 0px -10px;font-size: 12px;color: #ef364f;display: none;}
+.show_error .error_msg {display: block;}
+.show_hide_pass {position: absolute;right: 10px;line-height: 1;top:10px;height: fit-content;}
+.show_hide_pass img {width: 20px;height: 20px;image-rendering: -webkit-optimize-contrast;}
+.hide_img {display: none;}
+.submit_btn {display:inline-block;text-decoration: none;background: #152446;border: 1px solid #152446;color: #fff;padding: 12px 25px;font-size: 16px;border-radius: 30px;cursor: pointer;font-family:'Poppins', sans-serif;line-height:1;transition:0.5s all;}
+.submit_btn:hover {background: transparent;color: #152446;}
+
+
+/* media queries start here */
+@media (max-width: 991px){
+	.main_wrapper {max-width: 100%;margin: 30px;}
+	.section_title {font-size: 28px;padding-bottom: 15px;}
+}
+
+@media (max-width: 768px){
+	.section_title {font-size: 24px;}
+	.section_title:before {width: 60px;}
+	.form_field {flex-direction: column;justify-content: flex-start;}
+	.form_field label {width: 100%;padding: 0px 0px 5px;text-align: left;}
+	.form__inner_field {width: 100%;}
+}
+
+@media (max-width: 575px){
+	html, body {height: 100%;}
+	.main_wrapper {margin: 0px;padding: 25px;border-radius: 0px;box-shadow: unset;}
+	.section_title {font-size: 22px;}
+	.form__inner_field.password_filed input {padding-right: 30px;}
+	.show_hide_pass img {width: 17px;height: 17px;}
+}
+
+/* media queries end here */
+

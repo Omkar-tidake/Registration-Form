@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+
+	<!-- meta tag for responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Poppins goggle font cdn -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+	<!-- main content start here -->
+	<div class="main_wrapper">
+		<div class="container">
+			<div class="form_section_wrapper">
+				<div>
+					<h1 class="section_title">Registration Form</h1>
+				</div>
+				<div class="main_form">
+					<form id="registration_form">
+						<div class="form_field">
+							<label>Name <span class="required">*</span></label>
+							<div class="form__inner_field">
+								<input type="text" name="Name" id="name">
+								<div class="error_msg">Please enter your name</div>
+							</div>
+						</div>
+						<div class="form_field">
+							<label>Email <span class="required">*</span></label>
+							<div class="form__inner_field">
+								<input type="email" name="Name" id="email">
+								<div class="error_msg">Please enter valid email address</div>
+							</div>
+						</div>
+						<div class="form_field">
+							<label>Phone No. <span class="required">*</span></label>
+							<div class="form__inner_field">
+								<input type="text" name="Name" id="phone_no">
+								<div class="error_msg">Please enter Phone No.</div>
+							</div>
+						</div>
+						<div class="form_field">
+							<label>Address <span class="required">*</span></label>
+							<div class="form__inner_field">
+								<textarea rows="3" id="address"></textarea>
+								<div class="error_msg">Please enter Address</div>
+							</div>
+						</div>
+						<div class="form_field">
+							<label>Password <span class="required">*</span></label>
+							<div class="form__inner_field password_filed">
+								<input type="password" name="Name" id="password">
+								<a href="javascript:;" class="show_hide_pass">
+									<img src="assets/images/view.png" class="hide_img" id="view_img_btn" onclick="showHidePassword('show')" alt="Image">
+									<img src="assets/images/hide.png" class="view_img" id="hide_img_btn" onclick="showHidePassword('hide')" alt="Image">
+								</a>
+								<div class="error_msg">Please enter Password</div>
+							</div>
+						</div>
+						<div class="form_field">
+							<label>Confirm Password <span class="required">*</span></label>
+							<div class="form__inner_field">
+								<input type="password" name="Name" id="conf_password">
+								<div class="error_msg">Please enter Confirm Password Same as Password</div>
+							</div>
+						</div>
+						<div class="form_field">
+							<label></label>
+							<div class="form__inner_field">
+								<a href="javascript:;" class="submit_btn" onclick="checkForm();">Submit</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- main content end here -->
+
+	<!-- custom js -->
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+</body>
+</html>
